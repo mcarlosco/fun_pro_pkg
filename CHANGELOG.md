@@ -1,3 +1,3 @@
 ## 1.0.0
 
-- Initial version.
+- Flip coins to reveal their value, and handle the result.
