@@ -1,39 +1,33 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Fun Pro Package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Package developed with [Dart](https://dart.dev/).
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Functional programming but with [`Coin`](https://github.com/mcarlosco/fun_pro_pkg/blob/main/lib/src/coin.dart)s, which are flipped instead folded to reveal their value.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```yaml
+fun_pro_pkg:
+  git:
+    url: https://github.com/mcarlosco/fun_pro_pkg
+    ref: main
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+Coin<double, Exception> divide(int dividend, int divisor) => divisor != 0
+    ? Coin.heads(dividend / divisor)
+    : Coin.tails(InfinityQuotientException());
+
+// ...
+
+divide(5, 2).flip<void>(print, print); // 2.5
+divide(5, 0).flip<void>(print, print); // Instance of 'InfinityQuotientException'
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Este repositorio es personal y complementa las Fases 3 y 5 de la Ruta de Crecimiento Práctica del Chapter Mobile.
