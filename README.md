@@ -4,7 +4,7 @@ Package developed with [Dart](https://dart.dev/).
 
 ## Features
 
-Functional programming but with [`Coin`](https://github.com/mcarlosco/fun_pro_pkg/blob/main/lib/src/coin.dart)s, which are flipped instead folded to reveal their value.
+Functional programming but with [`Coin`](https://github.com/mcarlosco/fun_pro_pkg/blob/main/lib/src/coin.dart)s, which are flipped instead of folded to reveal their value.
 
 ## Getting started
 
